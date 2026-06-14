@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
-import { getServices } from '@services/api/endpoints/service';
-import { SERVICES } from '@/data/service';
-import type { ServiceItem } from '@types/api/service';
+import { getServices } from '@app/services/api/endpoints/service';
+import { SERVICES } from '@app/data/service';
+import type { ServiceItem } from '@app/types/api/service';
 
 export const useServicesData = () => {
   return useQuery<ServiceItem[], Error, ServiceItem[]>({

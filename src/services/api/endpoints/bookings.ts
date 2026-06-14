@@ -1,5 +1,5 @@
 import { apiClient } from '../client/axios';
-import type { BookingItem } from '@types/api/booking';
+import type { BookingItem } from '@app/types/api/bookings';
 
 export const getBookings = async (): Promise<BookingItem[]> => {
   const { data } = await apiClient.get<BookingItem[]>('/bookings');

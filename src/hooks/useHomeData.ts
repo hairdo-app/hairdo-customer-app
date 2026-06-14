@@ -1,13 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchHomeData } from '@services/api/endpoints/home';
+import { fetchHomeData } from '@app/services/api/endpoints/home';
 import {
   FEATURED_SALONS,
   HOME_CATEGORIES,
   HOME_OFFER,
   HOME_REWARDS,
   RECOMMENDED_SERVICES,
-} from '@/data/home';
-import type { HomeResponse } from '@types/api/home';
+} from '@app/data/home';
+import type { HomeResponse } from '@app/types/api/home';
 
 export const useHomeData = () => {
   return useQuery<HomeResponse, Error, HomeResponse>({

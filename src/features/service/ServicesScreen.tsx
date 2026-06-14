@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, FlatList, StyleSheet, ActivityIndicator } from 'react-native';
-import { useTheme } from '@theme/ThemeProvider';
-import { useServicesData } from '@hooks/useServicesData';
+import { useTheme } from '@app/theme/ThemeProvider';
+import { useServicesData } from '@app/hooks/useServicesData';
 
 export default function ServicesScreen() {
   const { colors } = useTheme();

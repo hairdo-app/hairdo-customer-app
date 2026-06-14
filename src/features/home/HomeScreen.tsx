@@ -17,8 +17,8 @@ import {
   Star,
   MapPin,
 } from 'lucide-react-native';
-import { useTheme } from '@theme/ThemeProvider';
-import { useHomeData } from '@hooks/useHomeData';
+import { useTheme } from '@app/theme/ThemeProvider';
+import { useHomeData } from '@app/hooks/useHomeData';
 
 export default function HomeScreen() {
   const { colors } = useTheme();

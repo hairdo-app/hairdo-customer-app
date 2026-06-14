@@ -1,9 +1,8 @@
 import axios from 'axios';
-
-export const API_BASE_URL = 'https://api.example.com';
+import { env } from '@app/config/env';
 
 export const apiClient = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: env.API_BASE_URL || 'https://api.example.com',
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json',
